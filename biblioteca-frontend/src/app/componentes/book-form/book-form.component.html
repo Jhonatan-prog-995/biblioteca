@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+    
+        <h1>Biblioteca-Jhow</h1>
+    
+    
+        <form (ngSubmit)="addBook()">
+            <input [(ngModel)]="titulo" name="titulo" placeholder="Nome do livro" required>
+            <input [(ngModel)]="autor" name="autor" placeholder="Autor" required>
+            <input [(ngModel)]="ano" name="ano" placeholder="Ano" required>
+    
+        
+            <button type="submit" [disabled]="isSubmitting">
+            {{ isSubmitting ? 'Cadastrando...' : 'Cadastrar' }}
+            </button>
+        </form>
+    </div>
+</section>
+  

@@ -1,0 +1,25 @@
+h1{
+    font-size: 40px;
+    color: #287e1d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border: solid 1px lightseagreen;
+    height: 25px;
+    width: 15rem;
+    font-size: 20px;
+}
+
+input:hover{
+    border-color: lightblue;
+}
+
+button{
+    background: lightblue;
+    font-size: 20px;
+    border: solid 1px blue;
+    margin-left: 10px;
+    color: #287e1d;
+    cursor: pointer;
+}

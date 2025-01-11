@@ -1,0 +1,19 @@
+
+
+  <app-book-form (bookCreated)="onBookCreated($event)"></app-book-form>
+
+<section>
+      <div class="container">
+        <h2>Meus livros</h2>
+        <ul>
+          <li *ngFor="let book of books">
+          {{ book.titulo }} - {{ book.autor }} - {{ book.ano }}
+           <button (click)="deleteBook(book.id)">Excluir</button>
+          </li>
+        </ul>
+      </div>
+</section>
+          
+
+
+
